@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2f2f2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('chainsaw-man-the-3840x2160-23984.jpg');
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    background: #000;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 3px solid #d62828;
+}
+
+nav h1 {
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    color: #d62828;
+}
+
+header#inicio {
+    text-align: center;
+    padding: 60px 16px 20px;
+}
+
+header#inicio h2 {
+    font-size: 40px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    margin: 40px 16px 16px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(214, 40, 40, 0.4);
+}
+
+section h1,
+section h3 {
+    margin-bottom: 16px;
+    color: #d62828;
+    font-size: 30px;
+}
+
+#sinopse {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.filme-sinopse {
+    flex: 1;
+}
+
+.imagem-sinopse img {
+    width: 280px;
+    border-radius: 8px;
+    border: 3px solid #d62828;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-sinopse img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(214, 40, 40, 0.5);
+}
+
+.trailer-video {
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-video video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.cards-elenco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.card-elenco {
+    background: #000;
+    border-radius: 8px;
+    padding: 16px;
+    width: 240px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-elenco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(214, 40, 40, 0.5);
+}
+
+.card-elenco img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+#curiosidade > p {
+    color: #d62828;
+    font-weight: bold;
+}
+
+.cards-curisodade,
+.cards-curiosidade {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.card-curiosidade {
+    background: #000;
+    border-radius: 8px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-curiosidade:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(214, 40, 40, 0.5);
+}
+
+.contato-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #000;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 15px auto;
+    box-shadow: 0 4px 8px rgba(214, 40, 40, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(214, 40, 40, 0.7);
+}
+
+.contato-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 720px) {
+    #sinopse {
+        flex-direction: column;
+    }
+
+    header#inicio h2 {
+        font-size: 30px;
+    }
+}
