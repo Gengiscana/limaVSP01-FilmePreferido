@@ -141,7 +141,7 @@ section h3 {
     margin-bottom: 12px;
 }
 
-#curiosidade > p {
+#curiosidade>p {
     color: #d62828;
     font-weight: bold;
 }
@@ -199,4 +199,15 @@ section h3 {
     header#inicio h2 {
         font-size: 30px;
     }
+}
+
+.marca {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999;
 }
